@@ -1,0 +1,143 @@
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(188, 252, 115),
+    rgb(78, 168, 209)
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__select {
+    // background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  &__image {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    border: 0.1rem solid #33333300;
+    transition: 0.2s;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+    &:hover {
+      // transform: scale(1.05);
+      animation: pulse 1s;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.13);
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__image:hover &__img {
+    transform: scale(0.8);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    transform: scale(1.1);
+  }
+
+  &__form-wrapper {
+    min-width: 40rem;
+    min-height: 20rem;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(155, 226, 214),
+      rgb(160, 255, 196)
+    );
+    box-shadow: 0 1rem 6rem #0000003b;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    &--input {
+      padding: 1rem;
+      border-radius: 0.2rem;
+      border: none;
+      border: 0.14rem solid rgb(125, 181, 190);
+      margin-bottom: 1rem;
+
+      &:focus {
+        outline: none;
+        border: 0.14rem solid rgb(31, 43, 46);
+      }
+    }
+
+    &--label {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    &--submit {
+      cursor: pointer;
+      padding: 1rem;
+      border: none;
+      color: #fff;
+      font-size: 1.6rem;
+      border-radius: 0.2rem;
+      transition: 0.3s;
+      background-image: linear-gradient(
+        to bottom right,
+        #68be9a,
+        #43afaa
+      );
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-image: linear-gradient(
+          to bottom right,
+          #43afaa,
+          #68be9a
+        );
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #236965e7;
+  }
+  70% {
+    box-shadow: 0 0 0 1.2rem #23696600;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #23696600;
+  }
+}
+
+.grey {
+  color: #777;
+}

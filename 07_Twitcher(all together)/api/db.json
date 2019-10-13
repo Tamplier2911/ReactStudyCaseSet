@@ -1,0 +1,35 @@
+{
+  "streams": [
+    {
+      "title": "Leanne Graham",
+      "description": "Wonderful stream",
+      "id": 1
+    },
+    {
+      "title": "Ervina Howell",
+      "description": "Some random text for testing",
+      "id": 2
+    },
+    {
+      "title": "Patricia Lebsack",
+      "description": "Testing scripts",
+      "id": 3
+    },
+    {
+      "title": "Clementine Bauch",
+      "description": "Faye La Faye",
+      "id": 4
+    },
+    {
+      "title": "Chelsey Dietrich",
+      "description": "Staint not or yes?",
+      "id": 5
+    },
+    {
+      "title": "Mrs. Dennis Schulist",
+      "description": "Using own BrowserHistory object",
+      "userId": "Mrs. Dennis Schulist",
+      "id": 6
+    }
+  ]
+}

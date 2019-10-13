@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            min-width: 100vw;
+            min-height: 100vh;
+            background-color: bisque;
+        }
+
+        .sidebar {
+            width: 30rem;
+            min-height: 100vh;
+            background-color: azure;
+
+            padding: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content {
+            display: flex;
+            width: calc(100vw - 30rem);
+            min-height: 100vh;
+            align-items: center;
+            flex-direction: column;
+        }
+        .un-list {
+            list-style: none;
+            margin-top: 15rem;
+        }
+        .modal-on{
+            margin-top: 15rem;
+            cursor: pointer;
+        }
+        /*
+        ::after {
+            content: "";
+            position: table-cell;
+            clear: both;
+        }
+        */
+        .modal {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(228, 228, 228, 0.671);
+            z-index: 3;
+            
+            display: grid;
+            justify-content: center;
+            align-content: center;
+
+            transition: all .3s;
+            /* transition: <property> || <duration> || <timing-function> || <delay> */
+            /* opacity 0.3s ease 0.5s; */
+        }
+
+        .modal-box {
+            width: 45rem;
+            height: 30rem;
+            background-color: #fff;
+            border-radius: .3rem;
+            border: .1rem solid #333;
+            padding: 2rem;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="modal">
+            <div class="modal-box">
+                Modal
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <h3>SideBar</h3>
+            <ul class="un-list">
+                <li class="list">Menu</li>
+                <li class="list">Show</li>
+                <li class="list">Loop</li>
+                <li class="list">About us</li>
+                <li class="list">Recursion</li>
+                <li class="list">Something Else</li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h1>Content</h1>
+            <div class="modal-on">Pop Modal</div>
+        </div>
+
+        <script>
+            document.querySelector('.modal-box').addEventListener('click', (e) => {
+                console.log("modal clicked");
+                document.querySelector('.modal').style.opacity = 0;
+                setTimeout(() => document.querySelector('.modal').style.display = 'none', 400);
+            });
+
+            document.querySelector('.modal-on').addEventListener('click', (e) => {
+                console.log("modal clicked");
+                document.querySelector('.modal').style.display = 'grid';
+                setTimeout(() => document.querySelector('.modal').style.opacity = 1, 00);
+            });
+        </script>
+    </div>
+</body>
+</html>

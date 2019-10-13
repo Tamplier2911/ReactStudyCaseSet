@@ -1,0 +1,33 @@
+.container {
+  min-width: 50rem;
+  max-width: 50rem;
+  min-height: 35rem;
+  padding: 2rem;
+
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 1rem 6rem;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  border: 0.2rem rgb(51, 51, 51) solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: rgb(184, 184, 184);
+  }
+}

@@ -1,0 +1,60 @@
+.btn {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    // padding: .2rem .4rem;
+    // width: 7.8rem;
+    background-color: transparent;
+    // background-color: red;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+
+    
+    display: flex;
+    align-items: center;
+    // justify-content: space-evenly;
+
+    &__image {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        margin-left: .8rem;
+    }
+
+    &:hover,
+    &:active {
+        color: rgb(252, 179, 84);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.loading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    &__spinner{
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        margin-left: .8rem;
+
+        animation: spin .8s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

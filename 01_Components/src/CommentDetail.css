@@ -1,0 +1,76 @@
+.component {
+    width: 60rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 80%,
+        rgb(253, 117, 67) 80%
+    );
+    background-size: 130%;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(253, 117, 67);
+    transition: all .5s;
+}
+
+.component:hover {
+    transform:  scale(1.1);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    background-position: right;
+}
+
+.component:hover .component__time {
+    color: #fff;
+}
+
+.component:hover .approval {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+img {
+    height: 10rem;
+    width: 16rem;
+    /* width: 10rem; */
+    float: left;
+}
+
+.component__time {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.2rem;
+    color: rgb(185, 185, 185);
+    transition: all .5s;
+}
+
+.component__name {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-left: 2rem;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(
+        to right,
+        blue 0%,
+        orangered 15%
+    );
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    font-weight: 100;
+}
+
+.component__text {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 2rem;
+    width: 50%;
+    letter-spacing: .2rem;
+    /* color: rgb(253, 117, 67); */
+}

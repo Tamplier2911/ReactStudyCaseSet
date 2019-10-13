@@ -1,0 +1,28 @@
+.content-container {
+  max-height: 35rem;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #2834930c;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #535353
+    );
+    border-radius: 5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #0000004d;
+    box-shadow: inset 0 0 6px #0000004d;
+  }
+}

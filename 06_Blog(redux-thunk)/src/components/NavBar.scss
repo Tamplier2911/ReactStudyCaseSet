@@ -1,0 +1,75 @@
+//navigation
+.navbar {
+    background-color: #2a80cf;
+    color: #fff;
+    flex: 0 0 22rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        align-self: stretch;
+    }
+
+    &__image {
+        display: block;
+        width: 20rem;
+    }
+
+    &__navList {
+        margin-bottom: auto;
+        list-style: none;
+
+        align-self: stretch; //////
+
+        // background-color: orange;
+
+        &:first-child {
+            margin-top: 1rem;
+        }
+    }
+
+    &__navItem {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        cursor: pointer;
+        position: relative;
+
+        padding: .5rem 1rem;
+
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: .5rem;
+            background-color: #734CBC;
+            z-index: 1;
+            transform: scale(0);
+            transition: transform .2s, width .5s cubic-bezier(0,.91,.11,1.05) .2s;
+        }
+
+        &:hover::before {
+            transform: scale(1);
+            width: 100%;
+        }
+
+        &-text {
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__copy {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,29 @@
+.composition2 {
+    height: 220rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+
+    flex-flow: column wrap;
+
+    padding: 2rem;
+    
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); */
+    /* grid-gap: 1rem;  */
+    /* grid-auto-rows: 15rem; */
+    /* grid-auto-rows: 19rem; */
+}
+
+.composition__container2 {
+    display: inline-block;
+    border-radius: .3rem;
+    overflow: hidden;
+    margin: 0.5rem;
+
+    /* flex: 1 0 auto; */
+    /* height: 2rem; */
+}

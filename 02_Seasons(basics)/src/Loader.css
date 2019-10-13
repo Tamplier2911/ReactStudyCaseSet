@@ -1,0 +1,28 @@
+.loader {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader__text {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-weight: 200;
+    display: inline-block;
+    margin-top: 2rem;
+    color: rgb(235, 235, 235);
+}
+
+.loader__image {
+    display: inline-block;
+    width: 6rem;
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}

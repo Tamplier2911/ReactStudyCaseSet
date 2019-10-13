@@ -1,0 +1,99 @@
+.form{
+
+    &__wrap {
+        width: 100%;
+        // min-height: 25vw;
+        min-width: 26rem;
+        min-height: 60%;
+        // width: 75%;
+        // margin: 2rem;
+        padding: 1rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__body {
+        width: 60%;
+        height: 70%;
+    }
+
+    &__title {
+        font-size: 1.7rem;
+        color: #6441a4;
+    }
+
+    &__field {
+
+        display: flex;
+        flex-direction: column;
+
+        &--label {
+            font-size: 1.8rem;
+            color: #6441a4d8;
+            order: 0;
+        }
+
+        &--input {
+            color: #333;
+            font-family: inherit;
+            font-size: 1.4rem;
+
+            width: 100%;
+            padding: .6rem 1rem;
+            border-radius: .3rem;
+            border: 1px solid #dac5ff;
+
+            &:focus {
+                outline: none;
+                outline: 1px solid #6441a4;
+                box-shadow: 0 .5rem 1rem #6341a433;
+            }
+            order: 1;
+        }
+
+        &--error {
+            font-size: 1.3rem;
+            color: #4b2e81;
+            order: 3;
+        }
+
+        &--submit {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 100;
+            // text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: #fff;
+            background-color: #6441a4;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            width: 100%;
+            border-radius: .3rem;
+            border: none;
+            transition: all .2s;
+
+            &:hover {
+                background-color: #7D5BBE;
+                // transform: translateY(-.1rem);
+                // box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+            }
+            /*
+            &:active{
+                background-color: #7D5BBE;
+                transform: translateY(-.02rem);
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+            }
+            */
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &--input:focus ~ &--label{
+            color: #4b2e81;
+        }
+    }
+}

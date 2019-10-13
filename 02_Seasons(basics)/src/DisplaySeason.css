@@ -1,0 +1,122 @@
+
+.season {
+    width: 70%;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: .3rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+
+.winter {
+    border: 1px solid skyblue;
+    outline-offset: 1rem;
+    background: linear-gradient(
+        to bottom right,
+        transparent,
+        rgb(56, 199, 255)
+    );
+    transition: all .5s;
+}
+
+.winter:hover {
+    outline: .3rem solid skyblue;
+}
+
+.summer {
+    border: 1px solid fuchsia;
+    outline-offset: 1rem;
+    background: linear-gradient(
+        to bottom right,
+        fuchsia,
+        transparent
+    );
+    transition: all .5s;
+}
+
+.summer:hover {
+    outline: .3rem solid fuchsia;
+}
+
+.season:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.season__top {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.season__image {
+    width: 100%;
+}
+
+.season__icon--1 {
+    position: absolute;
+    width: 20vw;
+    top: -7rem;
+    right: -6rem;
+    -webkit-animation: rotate 1.5s infinite linear;
+    animation: rotate 8s infinite linear;
+}
+
+.season__icon--2 {
+    position: absolute;
+    width: 15vw;
+    top: 7rem;
+    left: 6rem;
+    -webkit-animation: rotate 1.5s infinite linear;
+    animation: rotate 8s infinite linear;
+}
+
+.season__icon--3 {
+    position: absolute;
+    width: 10vw;
+    bottom: -4rem;
+    right: 8rem;
+    -webkit-animation: rotate 1.5s infinite linear;
+    animation: rotate 8s infinite linear;
+}
+
+.season__bottom {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    position: relative;
+}
+
+.season__description {
+    font-size: 2rem;
+    display: block;
+    margin-top: 1rem;
+    letter-spacing: .4rem;
+    color: #fff;
+}
+
+.season__lat {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    color: #fff;
+}
+
+.season__long {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    color: #fff;
+}
+
+@keyframes rotate {
+    0%  { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}

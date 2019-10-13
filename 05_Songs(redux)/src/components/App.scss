@@ -1,0 +1,37 @@
+.appContainer {
+    max-width: 90vw;
+    min-height: 90vh;
+    // background-color: rgb(228, 119, 80);
+    margin: 5vh auto;
+    border-radius: .3rem;
+    box-shadow: 0 2rem 4rem #00000033;
+
+    display: flex;
+    overflow: hidden;
+    &__left {
+        // background-color: rgb(197, 100, 100);
+        background-color: #f1f1f1;
+
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__right {
+        background-color: #eeebeb;
+
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    .appContainer {
+        flex-direction: column;
+    }
+}

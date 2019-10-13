@@ -1,0 +1,42 @@
+.approval {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(120%);
+    transition: all .5s;
+}
+
+.approval__button:link, 
+.approval__button:visited {
+    font-size: 1.3rem;
+    text-decoration: none;
+    /* color: rgb(107, 107, 107); */
+    color: rgb(253, 117, 67);
+    background-color: #fff;
+    display: inline-block;
+    padding: .2rem .6rem;
+    border-radius: .3rem;
+    transition: all .2s;
+}
+
+.approval__button:hover {
+    color: #fff;
+    background-color: rgb(252, 91, 33);
+    transform: scale(1.12);
+}
+
+.approval__button:active {
+    color: #fff;
+    background-color: rgb(252, 91, 33);
+    transform: scale(1.05);
+}
+
+/* .approval__button--1 {
+    
+} */
+
+.approval__button--2 {
+    margin-left: 1rem;
+}

@@ -1,0 +1,19 @@
+.container {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: 5vh auto;
+    background-color: #ececec;
+    box-shadow: 0 2rem 4rem #00000042;
+
+
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+//main content
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

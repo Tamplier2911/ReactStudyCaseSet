@@ -1,0 +1,59 @@
+.video{
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__frame {
+        margin-top: 1rem;
+        width: 98%;
+        flex: 0 0 60%;
+        border-radius: .3rem;
+        overflow: hidden;
+    }
+
+    &__details {
+        margin-top: 1rem;
+        width: 98%;
+        flex: 0 0 32%;
+        border-radius: .3rem;
+        overflow: scroll;
+        padding: .5rem 2rem;
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px #0000004d;
+            box-shadow: inset 0 0 6px #0000004d;
+        }
+    
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: #ff7b7b;
+            border-radius: 5rem;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #ff4d4d;
+            border-radius: 5rem;
+        }
+
+        &--title {
+            margin-bottom: .5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+        }
+
+        &--desc {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+
+    &__sample {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

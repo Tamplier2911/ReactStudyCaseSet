@@ -1,0 +1,43 @@
+.video__item {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .3rem;
+    transition: all .3s;
+    height: 8rem;
+    overflow: hidden;
+    border: 1px #ad505085 solid;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &--thumb {
+        width: 12rem;
+    }
+
+    &--title {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+        margin-left: 1rem;
+    }
+
+    &--desc {
+        margin-top: .7rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    &:last-child{
+        margin-bottom: 3rem;
+    }
+
+    &:not(:last-child) {
+        margin-top: -0.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+        border: 1px #fd1f1fb6 solid;
+    }
+}
